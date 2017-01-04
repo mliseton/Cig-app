@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
+import { Router, Route, Link, browserHistory } from 'react-router'
+
+
+
+
 import { Utilisateur } from '../../api/Utilisateur'
+
+
+
+import Logo from '../Logo'
 
 
 
@@ -18,13 +27,30 @@ export default class Login extends Component {
 
     render() {
         return (<div>
-                <h1>login</h1>
-                <form className="login" onSubmit={this.HandleSubmit.bind(this)}>
-                    <p>Email: <input type="text" name="pseudo"/></p>
-                    <p>Password: <input type="password" name="password"/></p>
-                    <p><input type="submit"  value="Register"/></p>
-                </form>
-            </div>
+                    <Logo />
+                <div className="content">
+                    <form className="register" onSubmit={this.HandleSubmit.bind(this)}>
+                        <label>Email
+                            <input type="text" id="email" name="pseudo"/>
+                        </label>
+                        <label>Mot de passe
+                            <input type="password" id="password" name="password" />
+                        </label>
+                            <button className="button-connect">Se connecter</button>
+                            <button className="button-register"><Link to={'/register'}>S'enregistrer</Link></button>
+                    </form>
+                    </div>
+                </div>
         );
     }
+
+
+
+
+
+
+
+
+
+
 }

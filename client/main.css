@@ -126,6 +126,10 @@ q:after {
     content: none;
 }
 
+.clear{
+    clear:both;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -138,55 +142,155 @@ body {
 
 h1{
     text-align:center;
-    margin-top:10%;
+    margin-top:5%;
 }
 
-.connect {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.content {
+    position: relative;
     text-align: center;
-    margin:0 auto
+    margin: 0 auto;
+    width: 300px;
 }
 
-.connect input{
+.content form input{
     display: block;
     box-sizing: border-box;
-    margin: 10px auto;
     border: 1px solid black;
+    margin: 0 auto;
+    margin-bottom:10px;
+    margin-top:10px;
 }
+
 
 textarea:focus, input:focus{
     outline: none;
 }
 
+.deconnexion{
+    font-size:12px;
+    border-bottom:1px solid black;
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+
+.deconnexion:hover{
+    cursor:pointer;
+}
 
 
-.connect img{
+.logo{
     display: block;
-    width: 50%;
+    width: 20%;
     margin: 0 auto;
 }
 
-.connect button{
-    background-color:#fff;
-    -moz-border-radius:28px;
-    -webkit-border-radius:28px;
-    border-radius:28px;
-    border:1px solid #000;
-    display:inline-block;
-    cursor:pointer;
-    color:#000;
-    font-size:14px;
-    padding:10px 21px;
-    text-decoration:none;
-}
-.myButton:hover {
-    background-color:#5cbf2a;
-}
-.myButton:active {
-    position:relative;
-    top:1px;
+.content .button-connect{
+    padding: 10px 10px;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    background-color:#000;
 }
 
+.content .button-register{
+    padding: 10px 10px;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    background-color:#000;
+    margin-top:5px;
+}
+
+form{
+
+}
+
+form label{
+    margin-bottom:10px;
+}
+
+.content .search{
+    box-sizing: border-box;
+    width: 75%;
+    padding: 10px 10px;
+    float: left;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-right: 5%;
+}
+
+.content .button-search{
+    padding: 10px 10px;
+    font-size: 14px;
+    width: 20%;
+    background-color:black;
+    border:none;
+    color:#fff;
+}
+
+.top-classement{
+    margin-top:30px;
+    text-align: left;
+    display:none;
+
+}
+
+.top-classement li{
+    padding-bottom:10px;
+}
+
+.top-classement .score{
+    float:right;
+}
+
+.result-search{
+    margin-top:30px;
+    text-align: left;
+}
+
+.result-search li{
+    padding-bottom:10px;
+    border-bottom:1px solid #000;
+    margin-bottom:20px;
+}
+
+.result-search .score{
+    float:right;
+}
+
+.no{
+    display:none;
+}
+
+.buttons{
+    margin-top:10px;
+
+}
+
+.buttons button{
+    padding: 10px 10px;
+    font-size: 14px;
+    width: 20%;
+    border: none;
+    color: #fff;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.buttons .ajouter{
+    background-color:#8BC34A
+}
+
+
+.buttons .supprimer{
+    background-color:#FF1744;
+}
+
+.home{
+    display:none;
+}
